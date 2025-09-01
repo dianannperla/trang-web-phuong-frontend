@@ -1,0 +1,19 @@
+{
+  "name": "trang-web-phuong",
+  "version": "1.0.0",
+  "description": "Khung công tácfrontend cho việc phát triển trang web động",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0",
+    "webpack-dev-server": "^3.11.0",
+    "vue": "^3.0.0"
+  },
+  "author": "Bất kỳ ai",
+  "license": "MIT"
+}
