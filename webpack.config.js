@@ -9,11 +9,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test:   /\.vue$/, 
+        test:   \.vue$, 
         loader: 'vue-loader'
       },
       {
-        test:    /\.js$/, 
+        test:    \.js$, 
         exclude: /node_modules/, 
         use: {
           loader:  'babel-loader',
@@ -34,6 +34,7 @@ module.exports = {
     static:             path.join(__dirname, 'dist'),
     compress:           true,
     port:              9000,
-    historyApiFallback: true
+    historyApiFallback: true,
+    hot:               true  // Added hot module replacement
   }
 };
