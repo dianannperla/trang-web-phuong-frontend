@@ -1,7 +1,7 @@
 {
   "name": "trang-web-phuong",
   "version": "1.0.0",
-  "description": "Khung công tácfrontend cho việc phát triển trang web động",
+  "description": "Khung công tác frontend cho việc phát triển trang web động",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --mode production",
