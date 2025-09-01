@@ -9,11 +9,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test:   /\.vue$/,
+        test:   /.vue$/,
         loader: 'vue-loader'
       },
       {
-        test:    /\.js$/,
+        test:    /.js$/,
         exclude: /node_modules/, 
         use: {
           loader:  'babel-loader',
@@ -35,6 +35,6 @@ module.exports = {
     compress: true,
     port: 9000,
     historyApiFallback: true,
-    hot: true  // Added hot module replacement
+    hot: true  // Enables hot module replacement
   }
 };
