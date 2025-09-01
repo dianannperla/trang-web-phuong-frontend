@@ -9,11 +9,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test:   /.vue$/,
+        test: /\\.vue$/,  // Updated regex syntax
         loader: 'vue-loader'
       },
       {
-        test:    /.js$/,
+        test: /\\.js$/,   // Updated regex syntax
         exclude: /node_modules/, 
         use: {
           loader:  'babel-loader',
