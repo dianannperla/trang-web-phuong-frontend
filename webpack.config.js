@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry:         './src/index.js',
-  output: { 
+  entry: './src/index.js',
+  output: {
     filename: 'bundle.js',
-    path:     path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -31,10 +31,10 @@ module.exports = {
     extensions: ['.js', '.vue', '.json']
   },
   devServer: {
-    static:             path.join(__dirname, 'dist'),
-    compress:           true,
-    port:              9000,
+    static: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000,
     historyApiFallback: true,
-    hot:               true  // Added hot module replacement
+    hot: true  // Added hot module replacement
   }
 };
